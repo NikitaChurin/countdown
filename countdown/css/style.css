@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    padding: 3% 35%;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 135px;
+    min-height: 75px;
+    color: white;
+    background-color: rgb(108, 194, 228);
+    font-size: 20px;
+    margin: 0 10px 10px 0;
+    transition: all 1s ease;
+}
+
+.boxRotate {
+    transform: rotateX(180deg);
+}
+
+.numbers--4,
+.numbers--8,
+.numbers--12,
+.numbers--16 {
+    margin-right: 0;
+}
+
+.text {
+    width: 99%;
+    height: 300px;
+    resize: none;
+    color: white;
+    background-color: rgb(108, 194, 228);
+    font-size: 24px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.start-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(108, 194, 228);
+    font-size: 24px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
