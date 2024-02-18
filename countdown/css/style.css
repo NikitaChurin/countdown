@@ -10,8 +10,9 @@ body {
 .container {
     display: flex;
     margin: 0 auto;
-    padding: 3% 35%;
+    padding: 5% 35%;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .box {
@@ -23,19 +24,10 @@ body {
     color: white;
     background-color: rgb(108, 194, 228);
     font-size: 20px;
-    margin: 0 10px 10px 0;
-    transition: all 1s ease;
 }
 
 .boxRotate {
-    transform: rotateX(180deg);
-}
-
-.numbers--4,
-.numbers--8,
-.numbers--12,
-.numbers--16 {
-    margin-right: 0;
+    animation: rotate 1.5s ease 1 forwards;
 }
 
 .text {
@@ -46,7 +38,6 @@ body {
     background-color: rgb(108, 194, 228);
     font-size: 24px;
     border: none;
-    margin-bottom: 10px;
 }
 
 .start-btn {
@@ -60,4 +51,14 @@ body {
     border: none;
     cursor: pointer;
     margin: 0 auto;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateX(0);
+    }
+
+    to {
+        transform: rotateX(180deg);
+    }
 }
